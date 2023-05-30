@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    margin: 0%;
+    font-family: "Monserrat"; 
+}
+
+.encabezado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 32px;
+}
+
+.logo img {
+    max-height: 64px;
+}
+
+.botonemergencias button {
+    background-color: red;
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+    font-family: "Monserrat"; 
+    cursor: pointer;
+}
+
+.menu {
+    background-color: #1A8389;
+    margin: 12px 0px 0px;
+}
+
+.menulistas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 0px 0px;
+    padding: 12px;
+    margin-inline: 224px;
+    list-style: none;
+}
+
+.menulistasitems {
+    text-decoration: none;
+    color: white;
+    margin: 12px 0px;
+    font-family: "Monserrat"; 
+}
+
+main {
+    margin-top: 0px;
+}
+
+.imagenprincipal {
+    width: 100%;
+    height: 220px;
+    margin: 0%;
+}
+
+.contenedor {
+    position: relative;
+}
+
+.contenedor2 {
+    height: 220px;
+}
+
+.texto {
+    position: absolute;
+    margin: 24px;
+    padding: 1px 1px 1px 472px;
+}
+
+.titulo {
+    font-family: "Monserrat";
+    font-size: 48px;
+    margin: 16px 0px 0px;   
+    color: #1A8389;
+}
+
+.contenedorservicios {
+    display: flex;
+}
+
+.contenedorservicios2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 32px;
+    padding: 0px 10px;
+    height: 302px;
+
+}
+
+.contenedorservicios a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.servicio {
+    margin: 16px;
+    padding: 16px;
+    color: #1A8389;
+    font-size: 36px;
+}
+
+.descripcionservicio {
+    text-align: center;
+    margin: 16px;
+    padding: 1px;
+    color: #1A8389
+}
+
+.imagenservicios {
+    width: 520px;
+    height: 302px;
+}
+
+.botonreserva {
+    background-color: #1A8389;
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+    font-family: "Monserrat"; 
+    cursor: pointer;
+    list-style: none;;
+}
+
+.contenedorservicios1 {
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+#turnero {
+    background-color: #1A8389;
+}
+
+.tituloturnero {
+    margin: 12px 48px;
+    padding: 48px 0px 6px;
+    font-family: "Monserrat";
+    font-size: 48px;
+    color: white;
+}
+
+.entradadedatos {
+    margin: 12px 48px 0px;
+    padding: 6px 0px 48px;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+label {
+    position: relative;
+    color: white;
+    background-color: transparent;
+    font-family: "Monserrat";
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 24px;
+
+}
+
+label:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+input {
+    align-self: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 50px;
+    padding: 5px;       
+    border: none;
+}
+
+.botonturnero {
+    background-color: black;
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: "Monserrat"; 
+    font-size: 18px;
+}
+
+.piedepagina {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 48px;
+}
+h6 {
+    color: white;
+}
+
+.footerubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    padding: 16px 1px;
+}
+
+.contenedorubicacion { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.calleubicacion { 
+    font-family: "Monserrat";
+    margin: 5px 5px 2.5px;
+    padding: 5px 5px 2.5px;
+}
+
+.barrioubicacion {
+    font-family: "Monserrat";
+    margin: 2.5px 5px 5px;
+    padding: 2.5px 5px 5px;
+}
+
+.footerhorarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1px;
+    padding: 16px 1px;
+}
+
+.contenedorhorarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+
+}
+
+.diaslaborales {
+    font-family: "Monserrat";
+    margin: 5px 5px 2.5px;
+    padding: 5px 5px 2.5px;
+}
+
+.horarioslaborales {    
+    font-family: "Monserrat";
+    margin: 2.5px 5px 5px;
+    padding: 2.5px 5px 5px;
+}
+
+.iconofooter {
+    width: 56px;
+}
+
+.footerredes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
+    padding: 16px 1px;
+}
+
+.contenedorubicacion {
+    text-decoration: none;    
+}
+
+.contenedorhorarios {
+    text-decoration: none;
+}
+
+.iconoinstagram {
+    width: 48px;
+    height: 48px;
+    margin: 1px;
+    padding: 1px 1px 6px6;
+}
+
+.contenedorwhatsapp {
+    width: 48px;
+    height: 48px;
+    margin: 1px;
+    padding: 6px 1px 1px;
+}
+
+.iconowhatsapp {
+    width: 48px;
+    height: 48px;
+}
+
+.registro {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 1px 376px;
+}
+
+.contenedorregistro1 {
+    display: flex;
+    align-items: center;
+    margin: 1px;
+    padding: 1px;
+}
+
+.iconoregistro {
+    margin: 1px 5px;
+    padding: 1px 5px;
+    height: 17.5px;
+}
+
+.registronombre1 {
+    margin: 1px 5px;
+    padding: 1px 5px;
+}
+
+.contenedorregistro2 {
+    margin: 1px;
+    padding: 1px;
+}
+
+.registronombre2 {
+    margin: 1px 5px;
+    padding: 2px 5px;
+}

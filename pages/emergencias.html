@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/emergencias.css">
+</head>
+<body>
+
+        
+        <!--ENCABEZADO-->
+        <header>
+
+            <div class="encabezado"> 
+                
+                <!--LOGO-->
+                <div class="logo">
+                    <a href="../intex.html">
+                        <img src="../public/logo/Odontologia San Juan (2) 1.jpg" alt="logo odontologia san Juan">
+                    </a>
+                </div>
+    
+                <!--BOTON DE EMERGENCIAS-->
+                <div class="botonemergencias">
+                    <a href="../pages/emergencias.html"><button>EMERGENCIAS</button></a>
+                </div>
+            </div>
+    
+            <!--MENU DE NAVEGACION-->
+            <nav class="menu"> 
+                <ul class="menulistas">
+                    <li>
+                        <a class="menulistasitems" href="../intex.html">INICIO</a>
+                    </li>
+                    <li>
+                        <a class="menulistasitems" href="../pages/nosotros.html">NOSOTROS</a>
+                    </li>
+                    <li>
+                        <a class="menulistasitems" href="../pages/servicios.html">SERVICIOS</a>
+                    </li>
+                    <li>
+                        <a class="menulistasitems" href="../pages/contactos.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+    
+        </header>
+
+        <!--CUERPO DE PAGINA-->
+        <main> 
+            <section class="contenedorcuerpo">  
+
+                <!--IMAGEN PRINCIPAL-->
+                    <img class="imagenprincipal" src="../public/img/imagencontacto.jpg" alt="consultorio odontologico">
+
+                    <!--FOMRULARIO-->
+                <div class="contenedor3">
+                        <h1 class="titulo">¿Emergencia dental? <br/> Estamos aqui para ayudarte.</h1>
+
+                    <div class="contenedorformulario">
+                        <form class="formulario">
+                            <label for="nombre" class="labelformulario">NOMBRE Y APELLIDO</label>
+                            <input type="text" name="nombre" class="inputformulario">
+                            <label for="telefono" class="labelformulario">N° TELEFONO</label>
+                            <input type="tel" name="telefono" class="inputformulario">
+
+                            <select name="color" class="contenedorselect">
+                                <option selected>Selecciona tú emergencia!</option>
+                                <option>Dolor intenso y persistente en la mandíbula, dientes o encías, especialmente si se acompaña de inflamación y fiebre.</option>
+                                <option>Fracturas dentales que causan dolor o que afectan el nervio del diente.</option>
+                                <option>Dientes que se aflojan o se desplazan de su posición normal debido a un traumatismo.</option>
+                                <option>Infecciones dentales que causan dolor intenso y fiebre, así como hinchazón en la cara y el cuello.</option>
+                                <option>Sangrado abundante y persistente en las encías o en la boca, especialmente después de una extracción dental o de una cirugía oral.</option>
+                                <option>Obstrucciones en la garganta o dificultad para tragar debido a una infección o un absceso dental.</option>
+                                <option>Lesiones en la boca, como cortes profundos en los labios, la lengua o las mejillas, que requieren suturas o atención médica inmediata.</option>
+                                <option>Otro.</option>
+                            </select>
+
+
+                            <label for="comentario" class="labelcomentario">Agrega un comentario (opcional):</label>
+                            <textarea name="comentario" class="textareaformulario"></textarea>
+
+                            <button class="botonemergencia" type="submit">SOLICITAR EMERGENCIA</button>
+
+                        </form>
+                    </div>
+
+
+                </div>
+
+            </section>
+        </main>
+
+        <!--PIE DE PAGINA-->
+        <footer>
+
+            <!--RESERVA DE TURNOS-->
+            <section class="turnero">
+        
+                <h2 class="tituloturnero">RESERVA TÚ TURNO!</h2>
+        
+                <form class="entradadedatos">
+
+                    <label for="nombre" class="labelturnero">NOMBRE:</label>
+                    <input type="text" name="nombre" class="inputturnero">
+        
+                    <label for="telefono" class="labelturnero">TELEFONO:</label>
+                    <input type="tel" name="telefono" class="inputturnero">
+        
+                    <label for="fecha" class="labelturnero">FECHA:</label>
+                    <input type="date" name="fecha" class="inputturnero">
+        
+                    <label for="hora" class="labelturnero">HORA:</label>
+                    <input type="time" name="hora" class="inputturnero">
+        
+                    <button class="botonturnero" type="submit">RESERVAR</button>
+        
+                </form>
+        
+            </section>
+        
+            <!--PIE DE PAGINA-->
+        
+            <div class="piedepagina">
+        
+                <div class="footerubicacion">
+                    <a class="contenedorubicacion" href="https://goo.gl/maps/mSe3JAmjqeEYsFda8">
+                        <img class="iconofooter" src="../public/img/simboloubicacion.jpg" alt="icono de navegacion/mapa">
+                        <h6 class="calleubicacion">Av. Juan B. Justo 2483</h6>
+                        <h6 class="barrioubicacion">Alta Cordoba, Cordoba</h6>
+                    </a>
+                </div>
+        
+                <div class="footerhorarios">
+        
+                        <img class="iconofooter" src="../public/img/iconohorario.jpeg" alt="icono de horario">
+                        <h6 class="diaslaborales">Lunes a Sabados</h6>
+                        <h6 class="horarioslaborales">9:00 - 21:00</h6>
+        
+                </div>
+        
+                <div class="footerredes">
+        
+                    <a class="contenedorinstagram" href="#">
+                        <img class="iconoinstagram" src="../public/img/iconoinstagram.jpeg" alt="icono de instagram">
+                    </a>
+        
+                    <a class="contenedorwhatsapp" href="#">
+                        <img class="iconowhatsapp" src="../public/img/iconodewhatsapp.png" alt="icono de whatsapp">
+                    </a>
+        
+                </div>
+        
+            </div>
+        
+            <div class="registro">
+                <div class="contenedorregistro1">
+                    <img class="iconoregistro" src="../public/img/C.jpg" alt="icono de marca registrada">
+                    <h5 class="registronombre1">2023   Odontologia Juan B Justo</h5>
+                </div>
+        
+                <div class="contenedorregistro2">
+                    <h5 class="registronombre2">Todos los derechos reservados</h5>
+                </div>
+        
+            </div>
+        
+            </footer>
+
+</body>
+
+    
+</body>
+</html>
