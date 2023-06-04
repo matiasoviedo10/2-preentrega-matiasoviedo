@@ -1,20 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-body {
-    margin: 0%;
-}
-
-.encabezado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 12px 32px;
-}
 
 .logo img {
-    max-height: 64px;
+    max-height: 56px;
 }
 
+.navbar-nav {
+    text-align: end;
+}
+
+.botonemergencias {
+    text-align: end;
+}
 .botonemergencias button {
     background-color: red;
     color: white;
@@ -23,56 +20,85 @@ body {
     border-radius: 100px;
     font-weight: bold;
     font-family: "Monserrat"; 
-    cursor: pointer;
-
+    font-size: 75%;
 }
 
-.menu {
-    background-color: #1A8389;
-    margin: 12px 0px 0px;
-}
-
-.menulistas {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 12px 0px 0px;
-    padding: 12px;
-    margin-inline: 224px;
-    list-style: none;
-}
-
-.menulistasitems {
+.enlace-botonemergencias {
     text-decoration: none;
-    color: white;
-    margin: 12px 0px;
-    font-family: "Monserrat"; 
 }
 
-main {
-    margin-top: 0;
+.botonemergencias1 button {
+    display: none;
 }
+
+@media (min-width: 992px) {
+    .encabezado {
+        align-items: center;
+    }
+    .logo img {
+        max-height: 72px;
+    }
+    .collapse {
+        justify-content: end;
+        text-transform: uppercase;
+    }
+    .nav-link {
+        border: none;
+        border-radius: 100px;
+        font-weight: bold;
+        font-family: "Monserrat"; 
+        cursor: pointer;
+    }
+    .nav-link:hover {
+        background-color: #1A8389;
+        color: white;
+    }
+    .botonemergencias {
+        display: none;
+    }
+    .botonemergencias1 {
+        text-align: end;
+    }
+    .botonemergencias1 button {
+        display: initial;
+        background-color: red;
+        color: white;
+        padding: 12px 16px;
+        border: none;
+        border-radius: 100px;
+        font-weight: bold;
+        font-family: "Monserrat"; 
+        cursor: pointer;
+    }
+    .botonemergencias1 button:hover {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+/* MAIN */
+
+.container {
+    position: relative;
+}
+
 .imagenprincipal {
     width: 100%;
-    height: 524px;
-    margin: 0%;
-}
-
-.contenedor {
-    position: relative;
+    z-index: 2;
 }
 
 .texto {
     position: absolute;
-    width: 680px;
-    margin: 24px;
-    padding: 1px 1px 1px 424px;
+    text-align: center;
+    font-family: "Monserrat";
+    z-index: 1;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .titulo {
-    font-family: "Monserrat";
-    font-size: 64px;
-    margin: 16px 0px 0px;   
+    font-size: 36px;
     color: #1A8389;
 }
 
@@ -81,106 +107,140 @@ main {
 }
 
 .eslogan {
-    margin: 0px;
-    padding: 0px 78px;
-    font-size: 24px;
+    font-size:16px;
     color: #1A8389;
-    font-family: "Monserrat";
 }
 
-.servicios {
-display: flex;
-justify-content: space-between;
-margin: 32px 48px;
+.servicios-desktop {
+    display: none;
 }
 
-.conjuntoservicios {
+@media (min-width: 992px) {
+    .texto {
+        top: 25%;
+    }
+    .titulo {
+        font-size: 72px;
+    }
+    .eslogan {
+        font-size: 28px;
+        text-align: end;
+    }
+    .carousel {
+        display: none;
+    }
+    .servicios-desktop {
+        display: inline;
+    }    
+    .servicios {
+        margin: 10px 0px;
+    }
+    .conjuntoservicios {
+        position: relative;
+        display: inline-block;
+    }    
+    .nombreservicios {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 150%);
+        font-size: 20px;
+        font-family: "Monserrat";
+        text-align: center;
+        color: #1A8389;
+        font-weight: 700;
+    }
+    .nombreservicios1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 75%);
+        font-size: 20px;
+        font-family: "Monserrat";
+        text-align: center;
+        color: #1A8389;
+        font-weight: 700;
+    }
+}
+
+/* TURNERO */
+
+.div-turnero {
+    background-color: #1A8389;
+    padding: 16px;
+    display: block;
+}
+.turnero {
+    background-color: white;
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px #022a2c;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
-}
-
-.imagenservicios {
-    width: 300px;
-    height: auto;
-}
-
-.nombreservicios {
-    color: #1A8389;
-    margin: 12px;
-    font-family: "Monserrat";
-}
-
-.turnero {
-    background-color: #1A8389;
 }
 
 .tituloturnero {
-    margin: 12px 48px;
-    padding: 48px 0px 6px;
+    text-align: center;
+    margin: 16px 16px 32px;
+    font-weight: 700;
     font-family: "Monserrat";
-    font-size: 48px;
-    color: white;
+    color: #1A8389;
 }
 
-.entradadedatos {
-    margin: 12px 48px 0px;
-    padding: 6px 0px 48px;
+form {
     display: flex;
-    justify-content: space-between;
-    justify-items: center;
+    flex-direction: column;
 }
 
-label {
-    position: relative;
-    color: white;
-    background-color: transparent;
+.label-turnero {
+    text-align: center;
+    font-weight: 700;
     font-family: "Monserrat";
-    align-self: center;
-    text-transform: uppercase;
-    font-size: 24px;
-
+    color: #1A8389;
 }
 
-label:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    opacity: 0.5;
-    z-index: -1;
+.input-turnero {
+    text-align: center;
+    padding: 2% 20%;
+    border-radius: 20px;
+    margin: 10px 0px;
+    color: #1A8389;
+    font-weight: 700;
 }
 
-input {
-    align-self: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    border-radius: 50px;
-    padding: 5px;
-    border: none;
+.contenedor-botonturnero {
+    text-align: center;
+    margin: 16px;
 }
-
 .botonturnero {
-    background-color: black;
+    background-color: #1A8389;
     color: white;
-    padding: 12px 16px;
+    padding: 12px 12px;
     border: none;
     border-radius: 50px;
     font-weight: bold;
     font-family: "Monserrat"; 
-    font-size: 18px;
 }
 
+@media (min-width: 992px) {
+    .div-turnero {
+        padding: 46px 100px
+    }
+    .turnero {
+        padding: 16px 56px; 
+    }
+    .tituloturnero {
+        font-size: 48px;
+    }
+    .input-turnero {
+        padding:1% 10%;
+
+    }
+}
+
+/* PIE DE PAGINA */
 .piedepagina {
     background-color: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 48px;
 }
 
 h6 {
@@ -191,9 +251,11 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 1px;
     padding: 16px 1px;
+    text-align: center;
+    height: 100%;
 }
 
 .contenedorubicacion { 
@@ -219,9 +281,11 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 1px;
     padding: 16px 1px;
+    text-align: center;
+    height: 100%;
 }
 
 .contenedorhorarios {
@@ -250,9 +314,10 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 1px;
     padding: 16px 1px;
+    height: 100%;
 }
 
 .contenedorinstagram {
@@ -281,37 +346,35 @@ h6 {
 
 .registro {
     background-color: white;
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    padding: 1px 376px;
+    flex-wrap: nowrap;
 }
 
 .contenedorregistro1 {
     display: flex;
     align-items: center;
     margin: 1px;
-    padding: 1px;
+    justify-content: center;
 }
 
 .iconoregistro {
     margin: 1px 5px;
-    padding: 1px 5px;
     height: 17.5px;
 }
 
 .registronombre1 {
     margin: 1px 5px;
-    padding: 1px 5px;
+    font-size: 12px;
 }
 
 .contenedorregistro2 {
     margin: 1px;
     padding: 1px;
+    text-align: center;
 }
 
 .registronombre2 {
     margin: 1px 5px;
     padding: 2px 5px;
+    font-size: 12px;
 }
 
