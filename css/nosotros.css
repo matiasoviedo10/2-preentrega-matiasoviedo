@@ -1,6 +1,395 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-body {
+.logo img {
+    max-height: 56px;
+}
+
+.navbar-nav {
+    text-align: end;
+}
+
+.botonemergencias {
+    text-align: end;
+}
+.botonemergencias button {
+    background-color: red;
+    color: white;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+    font-family: "Monserrat"; 
+    font-size: 75%;
+}
+
+.enlace-botonemergencias {
+    text-decoration: none;
+}
+
+.botonemergencias1 button {
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .encabezado {
+        align-items: center;
+    }
+    .logo img {
+        max-height: 72px;
+    }
+    .collapse {
+        justify-content: end;
+        text-transform: uppercase;
+    }
+    .nav-link {
+        border: none;
+        border-radius: 100px;
+        font-weight: bold;
+        font-family: "Monserrat"; 
+        cursor: pointer;
+    }
+    .nav-link:hover {
+        background-color: #1A8389;
+        color: white;
+    }
+    .botonemergencias {
+        display: none;
+    }
+    .botonemergencias1 {
+        text-align: end;
+    }
+    .botonemergencias1 button {
+        display: initial;
+        background-color: red;
+        color: white;
+        padding: 12px 16px;
+        border: none;
+        border-radius: 100px;
+        font-weight: bold;
+        font-family: "Monserrat"; 
+        cursor: pointer;
+    }
+    .botonemergencias1 button:hover {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+/* IMAGEN PRINCIPAL */
+
+.imagenprincipal {
+    width: 100%;
+    height: 220px;
+    margin: 0%;
+}
+
+.contenedor2 {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.contenedor2 {
+    height: 220px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center; 
+
+}
+
+.texto {
+    position: absolute;
+
+}
+
+.titulo {
+    font-family: "Monserrat";
+    font-size: 48px;
+    margin: 24px 0px 0px;   
+    color: #1A8389;
+    font-weight: 700;
+}
+
+/* MAIN */
+/*.profesionales {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px 48px;
+    padding: 1px 224px;
+    }*/     
+    
+    .contenedorprofesionales {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+    }
+    
+    .imagendoctores {
+        width: 300px;
+        height: auto;
+    }
+    
+    .nombresdoctores {
+        color: #1A8389;
+        margin: 12px;
+        font-family: "Monserrat";
+    }
+
+    .recepcionconsultorio {
+        margin-top: 24px;
+    }
+    .imagenconsultorio {
+        width: 100%;
+    }
+
+    /* HISTORIA */
+    .contenedorhistoria {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #1A8389  ;
+        text-align: center;
+        font-family: "Monserrat";
+        padding: 10px 100px;
+    }
+    
+    .titulohistoria {
+        margin: 32px 5px 5px;
+        padding: 1px;
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .historia {
+        white-space: pre-line;
+        margin: 5px;
+        padding: 1px;
+        font-size: 18px;
+    }
+
+    /* ASIDE */
+
+    .div-turnero {
+        background-color: #1A8389;
+        padding: 16px;
+        display: block;
+    }
+    .turnero {
+        background-color: white;
+        padding: 16px;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px #022a2c;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .tituloturnero {
+        text-align: center;
+        margin: 16px 16px 32px;
+        font-weight: 700;
+        font-family: "Monserrat";
+        color: #1A8389;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .label-turnero {
+        text-align: center;
+        font-weight: 700;
+        font-family: "Monserrat";
+        color: #1A8389;
+    }
+    
+    .input-turnero {
+        text-align: center;
+        padding: 2% 20%;
+        border-radius: 20px;
+        margin: 10px 0px;
+        color: #1A8389;
+        font-weight: 700;
+    }
+    
+    .contenedor-botonturnero {
+        text-align: center;
+        margin: 16px;
+    }
+    .botonturnero {
+        background-color: #1A8389;
+        color: white;
+        padding: 12px 12px;
+        border: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-family: "Monserrat"; 
+    }
+    
+    @media (min-width: 992px) {
+        .div-turnero {
+            padding: 46px 100px
+        }
+        .turnero {
+            padding: 16px 56px; 
+        }
+        .tituloturnero {
+            font-size: 48px;
+        }
+        .input-turnero {
+            padding:1% 10%;
+    
+        }
+    }
+    
+    /* FOOTER */
+    /* PIE DE PAGINA */
+.piedepagina {
+    background-color: black;
+}
+
+h6 {
+    color: white;
+}
+
+.footerubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
+    padding: 16px 1px;
+    text-align: center;
+    height: 100%;
+}
+
+.contenedorubicacion { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
+
+.calleubicacion { 
+    font-family: "Monserrat";
+    margin: 5px 5px 2.5px;
+    padding: 5px 5px 2.5px;
+}
+
+.barrioubicacion {
+    font-family: "Monserrat";
+    margin: 2.5px 5px 5px;
+    padding: 2.5px 5px 5px;
+}
+
+.footerhorarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
+    padding: 16px 1px;
+    text-align: center;
+    height: 100%;
+}
+
+.contenedorhorarios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.diaslaborales {
+    font-family: "Monserrat";
+    margin: 5px 5px 2.5px;
+    padding: 5px 5px 2.5px;
+}
+
+.horarioslaborales {    
+    font-family: "Monserrat";
+    margin: 2.5px 5px 5px;
+    padding: 2.5px 5px 5px;
+}
+
+.iconofooter {
+    width: 56px;
+}
+
+.footerredes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 1px;
+    padding: 16px 1px;
+    height: 100%;
+}
+
+.contenedorinstagram {
+    width: 48px;
+    height: 48px;
+    margin: 1px;
+    padding: 1px 1px 6px6;
+}
+
+.iconoinstagram { 
+    width: 48px;
+    height: 48px;
+}
+
+.contenedorwhatsapp {
+    width: 48px;
+    height: 48px;
+    margin: 1px;
+    padding: 6px 1px 1px;
+}
+
+.iconowhatsapp {
+    width: 48px;
+    height: 48px;
+}
+
+.registro {
+    background-color: white;
+    flex-wrap: nowrap;
+}
+
+.contenedorregistro1 {
+    display: flex;
+    align-items: center;
+    margin: 1px;
+    justify-content: center;
+}
+
+.iconoregistro {
+    margin: 1px 5px;
+    height: 17.5px;
+}
+
+.registronombre1 {
+    margin: 1px 5px;
+    font-size: 12px;
+}
+
+.contenedorregistro2 {
+    margin: 1px;
+    padding: 1px;
+    text-align: center;
+}
+
+.registronombre2 {
+    margin: 1px 5px;
+    padding: 2px 5px;
+    font-size: 12px;
+}
+
+
+    
+
+
+
+
+/*body {
     margin: 0%;
 }
 
@@ -80,31 +469,31 @@ main {
     color: #1A8389;
 }
 
-.profesionales {
-    display: flex;
-    justify-content: space-between;
-    margin: 32px 48px;
-    padding: 1px 224px;
-    }
-    
-    .contenedorprofesionales {
+    .profesionales {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-decoration: none;
-    }
-    
-    .imagendoctores {
-        width: 300px;
-        height: auto;
-    }
-    
-    .nombresdoctores {
-        color: #1A8389;
-        margin: 12px;
-        font-family: "Monserrat";
-    }
+        justify-content: space-between;
+        margin: 32px 48px;
+        padding: 1px 224px;
+        }
+        
+        .contenedorprofesionales {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+        }
+        
+        .imagendoctores {
+            width: 300px;
+            height: auto;
+        }
+        
+        .nombresdoctores {
+            color: #1A8389;
+            margin: 12px;
+            font-family: "Monserrat";
+        }
 
     .recepcionconsultorio {
         height: 299px;

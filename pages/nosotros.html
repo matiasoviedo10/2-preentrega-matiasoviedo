@@ -4,57 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Nosotros</title>
     <link rel="stylesheet" href="../css/nosotros.css">
+    <link rel="icon" href="../public/logo/Odontologia San Juan (2) 1.jpg" type="image/x-icon">
 </head>
 <body>
     
     <!--ENCABEZADO-->
     <header>
 
-        <div class="encabezado"> 
-            
-            <!--LOGO-->
-            <div class="logo">
-                <a href="../intex.html">
-                    <img src="../public/logo/Odontologia San Juan (2) 1.jpg" alt="logo odontologia san Juan">
-                </a>
-            </div>
-
-            <!--BOTON DE EMERGENCIAS-->
-            <div class="botonemergencias">
-                <a href="../pages/emergencias.html"><button>EMERGENCIAS</button></a>
+        <div class="container">
+            <div class="encabezado row mt-2 mb-2">
+    
+                <!--LOGO-->
+                <div class="logo col-6 col-lg-3 justify-content-star">
+                    <a href="../intex.html">
+                        <img class="img-fluid" src="../public/logo/Odontologia San Juan (2) 1.jpg" alt="logo odontologia san Juan">
+                    </a>
+                </div>
+    
+                <!--MENU NAVEGADOR-->
+                <nav class="navbar navbar-expand-sm navbar-white bg-white col-6 col-lg-6">
+                    <div class="container justify-content-end">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="./pages/contactos.html">Contacto</a>
+                                </li>
+                                <li class="botonemergencias">
+                                    <a href="#">
+                                        <button>EMERGENCIAS</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+    
+                <!--BOTON DE EMERGENCIAS-->
+                <div class="botonemergencias1 col-lg-3">
+                    <a class="enlace-botonemergencias" href="./pages/emergencias.html"><button>EMERGENCIAS</button></a>
+                </div>
             </div>
         </div>
-
-        <!--MENU DE NAVEGACION-->
-        <nav class="menu"> 
-            <ul class="menulistas">
-                <li>
-                    <a class="menulistasitems" href="../intex.html">INICIO</a>
-                </li>
-                <li>
-                    <a class="menulistasitems" href="../pages/nosotros.html">NOSOTROS</a>
-                </li>
-                <li>
-                    <a class="menulistasitems" href="../pages/servicios.html">SERVICIOS</a>
-                </li>
-                <li>
-                    <a class="menulistasitems" href="../pages/contactos.html">CONTACTO</a>
-                </li>
-            </ul>
-        </nav>
-
+    
         <!--BANNER-->
-        <div class="contenedor2">
+        <div class="container">
+            <div class="row">
+        <div class="contenedor2 col-12 col-lg-12">
 
             <div class="texto">
                 <h1 class="titulo">Nuestro equipo de profesionales</h1>
             </div>
 
-                <img class="imagenprincipal" src="../public/img/imagennosotros.jpg" alt="parte de un consultorio odontologico">
-
+                <img class="imagenprincipal img-fluid" src="../public/img/imagennosotros.jpg" alt="parte de un consultorio odontologico">
         </div>
+    </div>
+    </div>
 
     </header>
 
@@ -62,16 +81,15 @@
     <main>
 
         <!--PROFESIONALES-->
-        <section class="contenedor">
+        <section class="container">
+            <div class=" row profesionales">
 
-            <div class="profesionales">
-
-                <div class="contenedorprofesionales">
+                <div class="contenedorprofesionales col-12 col-lg-6">
                     <img class="imagendoctores" src="../public/img/gabrieloviedo.jpg" alt="doctor gabriel oviedo">
                     <h3 class="nombresdoctores">Dr. Gabriel Oviedo</h3>
                 </div>
 
-                <div class="contenedorprofesionales">
+                <div class="contenedorprofesionales col-12 col-lg-6">
                     <img class="imagendoctores" src="../public/img/fernandobarrera.jpg" alt="doctor fernando barrera">
                     <h3 class="nombresdoctores">Dr. Fernando Barrera</h3>
                 </div>
@@ -79,15 +97,19 @@
             </div>
 
         </section>
-
-        <div class="recepcionconsultorio">
+        <div class="container">
+        <div class="row">
+        <div class="recepcionconsultorio col-12 col-lg-12">
             <img class="imagenconsultorio" src="../public/img/imagenpienosotros.jpg" alt="recepcion consultorio odontologico">
         </div>
-    
+    </div>
+    </div>
     </main>
 
     <!--HISTORIA-->
-    <section class="contenedorhistoria">
+        <section class="container">
+            <div class="row">
+    <div class="contenedorhistoria col-lg-12">
 
             <h2 class="titulohistoria">Nuestra historia</h2>
 
@@ -104,37 +126,47 @@
 
                 ¡Gracias por ser parte de nuestro consultorio dental!
             </p>
-    </section>
+    </div>
+</div>
+</section>
 
-        <!--PIE DE PAGINA-->
+<aside>
+    <section class="container">
+    <div class="row">
+    <div class="col-12 col-lg-12 div-turnero">
+    <div class="turnero">
+    <h2 class="tituloturnero">RESERVA TÚ TURNO!</h2>
+
+    <form>
+        <label for="nombre" class="label-turnero">NOMBRE</label>
+        <input type="text" id="nombre" name="nombre" class="input-turnero">
+
+        <label for="telefono" class="label-turnero">TELEFONO</label>
+        <input type="tel" id="telefono" name="telefono" class="input-turnero">
+        
+        <input type="date" id="fecha" name="fecha" class="input-turnero">
+
+        <input type="time" id="hora" name="hora" class="input-turnero">
+
+        <div class="contenedor-botonturnero">
+        <button class="botonturnero" type="submit">RESERVAR</button>
+        </div>
+
+    </form>
+    </div>
+    </div>
+    </div>
+
+</section>
+
+</aside>
+
+
+    <!--PIE DE PAGINA-->
     <footer>
-
-        <!--RESERVA DE TURNOS-->
-        <section class="turnero">
-    
-            <h2 class="tituloturnero">RESERVA TÚ TURNO!</h2>
-    
-            <form class="entradadedatos">
-                <label for="nombre">NOMBRE:</label>
-                <input type="text" id="nombre" name="nombre">
-    
-                <label for="telefono">TELEFONO:</label>
-                <input type="tel" id="telefono" name="telefono">
-    
-                <label for="fecha">FECHA:</label>
-                <input type="date" id="fecha" name="fecha">
-    
-                <label for="hora">HORA:</label>
-                <input type="time" id="hora" name="hora">
-    
-                <button class="botonturnero" type="submit">RESERVAR</button>
-    
-            </form>
-    
-        </section>
-        
-        <div class="piedepagina">
-        
+        <div class="container">
+        <div class="row piedepagina">
+            <div class="col-4 col-lg-4">
             <div class="footerubicacion">
                 <a class="contenedorubicacion" href="https://goo.gl/maps/mSe3JAmjqeEYsFda8">
                     <img class="iconofooter" src="../public/img/simboloubicacion.jpg" alt="icono de navegacion/mapa">
@@ -142,17 +174,18 @@
                     <h6 class="barrioubicacion">Alta Cordoba, Cordoba</h6>
                 </a>
             </div>
+            </div>
     
+            <div class="col-4 col-lg-4">
             <div class="footerhorarios">
-    
                     <img class="iconofooter" src="../public/img/iconohorario.jpeg" alt="icono de horario">
                     <h6 class="diaslaborales">Lunes a Sabados</h6>
                     <h6 class="horarioslaborales">9:00 - 21:00</h6>
-    
+            </div>
             </div>
     
+            <div class="col-4 col-lg-4">
             <div class="footerredes">
-    
                 <a class="contenedorinstagram" href="#">
                     <img class="iconoinstagram" src="../public/img/iconoinstagram.jpeg" alt="icono de instagram">
                 </a>
@@ -160,24 +193,28 @@
                 <a class="contenedorwhatsapp" href="#">
                     <img class="iconowhatsapp" src="../public/img/iconodewhatsapp.png" alt="icono de whatsapp">
                 </a>
-    
             </div>
-    
+            </div>
         </div>
-    
-        <div class="registro">
-            <div class="contenedorregistro1">
+        </div>
+        
+        <div class="container">
+        <div class="registro row">
+            <div class="contenedorregistro1 col-6">
                 <img class="iconoregistro" src="../public/img/C.jpg" alt="icono de marca registrada">
                 <h5 class="registronombre1">2023   Odontologia Juan B Justo</h5>
             </div>
     
-            <div class="contenedorregistro2">
+            <div class="contenedorregistro2 col-6">
                 <h5 class="registronombre2">Todos los derechos reservados</h5>
             </div>
     
         </div>
-
-        </footer>
+        </div>
+        </div>
     
+        </footer>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
 </html>
