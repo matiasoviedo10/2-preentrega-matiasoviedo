@@ -1,158 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <title>Contacto</title>
     <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="icon" href="../public/logo/Odontologia San Juan (2) 1.jpg" type="image/x-icon">
 </head>
 <body>
     
-        <!--ENCABEZADO-->
-        <header>
+    <!--ENCABEZADO-->
+    <header>
 
-            <div class="encabezado"> 
-                
+        <div class="container">
+            <div class="encabezado row mt-2 mb-2">
+    
                 <!--LOGO-->
-                <div class="logo">
+                <div class="logo col-6 col-lg-3 justify-content-star">
                     <a href="../intex.html">
-                        <img src="../public/logo/Odontologia San Juan (2) 1.jpg" alt="logo odontologia san Juan">
+                        <img class="img-fluid" src="../public/logo/Odontologia San Juan (2) 1.jpg" alt="logo odontologia san Juan">
                     </a>
                 </div>
     
+                <!--MENU NAVEGADOR-->
+                <nav class="navbar navbar-expand-sm navbar-white bg-white col-6 col-lg-6">
+                    <div class="container justify-content-end">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../intex.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/nosotros.html">Nosotros</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/servicios.html">Servicios</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../pages/contactos.html">Contacto</a>
+                                </li>
+                                <li class="botonemergencias">
+                                    <a href="../pages/emergencias.html">
+                                        <button>EMERGENCIAS</button>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+    
                 <!--BOTON DE EMERGENCIAS-->
-                <div class="botonemergencias">
-                    <a href="../pages/emergencias.html"><button>EMERGENCIAS</button></a>
+                <div class="botonemergencias1 col-lg-3">
+                    <a class="enlace-botonemergencias" href="../pages/emergencias.html"><button>EMERGENCIAS</button></a>
                 </div>
             </div>
-    
-            <!--MENU DE NAVEGACION-->
-            <nav class="menu"> 
-                <ul class="menulistas">
-                    <li>
-                        <a class="menulistasitems" href="../intex.html">INICIO</a>
-                    </li>
-                    <li>
-                        <a class="menulistasitems" href="../pages/nosotros.html">NOSOTROS</a>
-                    </li>
-                    <li>
-                        <a class="menulistasitems" href="../pages/servicios.html">SERVICIOS</a>
-                    </li>
-                    <li>
-                        <a class="menulistasitems" href="../pages/contactos.html">CONTACTO</a>
-                    </li>
-                </ul>
-            </nav>
-    
-        </header>
+        </div>
+    </header>
 
-        <!--CUERPO DE PAGINA-->
+    <!-- CUERPO DE PAGINA  -->
         <main> 
-            <section class="contenedorcuerpo">
+            <section class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-12">
+                        <div class="contenedor-principal">
+                            <div class="contenedor-formulario">
+                            <div class="titulo-formulario">
+                                <h1 class="titulo">Convierte tus preguntas <br/> en soluciones, ¡Contáctanos!</h1>
+                            </div>
+                            <form class="formulario">
+                                <label for="" class="labelformulario">NOMBRE Y APELLIDO</label>
+                                <input type="text" name="nombre" class="inputformulario">
+                                <label for="" class="labelformulario">N° TELEFONO</label>
+                                <input type="tel" name="telefono" class="inputformulario">
+                                <label for="consulta" class="labelformulario1">Realiza tu consulta!</label>
+                                <textarea name="" id="consulta" cols="30" rows="10"></textarea>
+                                <button class="botoncontacto" type="submit">ENVIAR</button>
+                            </form>
+                            </div>
 
-                <!--IMAGEN PRINCIPAL-->
-                    <img class="imagenprincipal" src="../public/img/imagencontacto.jpg" alt="consultorio odontologico">
+                            <div class="contenedor-img">
+                                <img class="img-formulario" src="../public/img/imagencontacto.jpg" alt="consultorio odontologico">
+                            </div>
 
-                    <!--FORMULARIO-->
-                <div class="contenedor3">
-                        <h1 class="titulo">Convierte tus preguntas <br/> en soluciones, ¡Contáctanos!</h1>
-
-                    <div class="contenedorformulario">
-                        <form class="formulario">
-                            <label for="nombre" class="labelformulario">NOMBRE Y APELLIDO</label>
-                            <input type="text" name="nombre" class="inputformulario">
-                            <label for="telefono" class="labelformulario">N° TELEFONO</label>
-                            <input type="tel" name="telefono" class="inputformulario">
-                            <label for="consulta" class="labelformulario1">Realiza tu consulta!</label>
-                            <textarea class="textareaformulario1"></textarea>
-
-                            <button class="botoncontacto" type="submit">ENVIAR</button>
-
-                        </form>
-                    </div>
-
-
+                        </div>
+                    </div> 
                 </div>
-
             </section>
         </main>
 
+        <!--TURNERO-->
+        <aside>
+            <section class="container">
+            <div class="row">
+            <div class="col-12 col-lg-12">
+            <div class="div-turnero">
+            <div class="turnero">
+            <h2 class="tituloturnero">RESERVA TÚ TURNO!</h2>
+    
+            <form>
+                <label for="nombre" class="label-turnero">NOMBRE</label>
+                <input type="text" id="nombre" name="nombre" class="input-turnero">
+    
+                <label for="telefono" class="label-turnero">TELEFONO</label>
+                <input type="tel" id="telefono" name="telefono" class="input-turnero">
+                
+                <input type="date" id="fecha" name="fecha" class="input-turnero">
+    
+                <input type="time" id="hora" name="hora" class="input-turnero">
+    
+                <div class="contenedor-botonturnero">
+                <button class="botonturnero" type="submit">RESERVAR</button>
+                </div>
+    
+            </form>
+            </div>
+            </div>
+            </div>
+            </div>
+    
+        </section>
+    
+        </aside>
+    
         <!--PIE DE PAGINA-->
         <footer>
-
-            <!--RESERVA DE TURNOS-->
-            <section class="turnero">
+        <div class="container">
+        <div class="row">
+        <div class="col-12 col-lg-12">
+            <div class="container">
+                <div class="row piedepagina">
+            <div class="col-4 col-lg-4">
+            <div class="footerubicacion">
+                <a class="contenedorubicacion" href="https://goo.gl/maps/mSe3JAmjqeEYsFda8">
+                    <img class="iconofooter" src="../public/img/simboloubicacion.jpg" alt="icono de navegacion/mapa">
+                    <h6 class="calleubicacion">Av. Juan B. Justo 2483</h6>
+                    <h6 class="barrioubicacion">Alta Cordoba, Cordoba</h6>
+                </a>
+            </div>
+            </div>
+    
+            <div class="col-4 col-lg-4">
+            <div class="footerhorarios">
+                    <img class="iconofooter" src="../public/img/iconohorario.jpeg" alt="icono de horario">
+                    <h6 class="diaslaborales">Lunes a Sabados</h6>
+                    <h6 class="horarioslaborales">9:00 - 21:00</h6>
+            </div>
+            </div>
+    
+            <div class="col-4 col-lg-4">
+            <div class="footerredes">
+                <a class="contenedorinstagram" href="#">
+                    <img class="iconoinstagram" src="../public/img/iconoinstagram.jpeg" alt="icono de instagram">
+                </a>
+    
+                <a class="contenedorwhatsapp" href="#">
+                    <img class="iconowhatsapp" src="../public/img/iconodewhatsapp.png" alt="icono de whatsapp">
+                </a>
+            </div>
+            </div>
+        </div>
+        </div>
         
-                <h2 class="tituloturnero">RESERVA TÚ TURNO!</h2>
-        
-                <form class="entradadedatos">
-
-                    <label for="nombre" class="labelturnero">NOMBRE:</label>
-                    <input type="text" name="nombre" class="inputturnero">
-        
-                    <label for="telefono" class="labelturnero">TELEFONO:</label>
-                    <input type="tel" name="telefono" class="inputturnero">
-        
-                    <label for="fecha" class="labelturnero">FECHA:</label>
-                    <input type="date" name="fecha" class="inputturnero">
-        
-                    <label for="hora" class="labelturnero">HORA:</label>
-                    <input type="time" name="hora" class="inputturnero">
-        
-                    <button class="botonturnero" type="submit">RESERVAR</button>
-        
-                </form>
-        
-            </section>
-        
-            <!--PIE DE PAGINA-->
-        
-            <div class="piedepagina">
-        
-                <div class="footerubicacion">
-                    <a class="contenedorubicacion" href="https://goo.gl/maps/mSe3JAmjqeEYsFda8">
-                        <img class="iconofooter" src="../public/img/simboloubicacion.jpg" alt="icono de navegacion/mapa">
-                        <h6 class="calleubicacion">Av. Juan B. Justo 2483</h6>
-                        <h6 class="barrioubicacion">Alta Cordoba, Cordoba</h6>
-                    </a>
-                </div>
-        
-                <div class="footerhorarios">
-        
-                        <img class="iconofooter" src="../public/img/iconohorario.jpeg" alt="icono de horario">
-                        <h6 class="diaslaborales">Lunes a Sabados</h6>
-                        <h6 class="horarioslaborales">9:00 - 21:00</h6>
-        
-                </div>
-        
-                <div class="footerredes">
-        
-                    <a class="contenedorinstagram" href="#">
-                        <img class="iconoinstagram" src="../public/img/iconoinstagram.jpeg" alt="icono de instagram">
-                    </a>
-        
-                    <a class="contenedorwhatsapp" href="#">
-                        <img class="iconowhatsapp" src="../public/img/iconodewhatsapp.png" alt="icono de whatsapp">
-                    </a>
-        
-                </div>
-        
+        <div class="container">
+        <div class="registro row">
+            <div class="contenedorregistro1 col-6">
+                <img class="iconoregistro" src="../public/img/C.jpg" alt="icono de marca registrada">
+                <h5 class="registronombre1">2023   Odontologia Juan B Justo</h5>
+            </div>
+    
+            <div class="contenedorregistro2 col-6">
+                <h5 class="registronombre2">Todos los derechos reservados</h5>
             </div>
         
-            <div class="registro">
-                <div class="contenedorregistro1">
-                    <img class="iconoregistro" src="../public/img/C.jpg" alt="icono de marca registrada">
-                    <h5 class="registronombre1">2023   Odontologia Juan B Justo</h5>
-                </div>
-        
-                <div class="contenedorregistro2">
-                    <h5 class="registronombre2">Todos los derechos reservados</h5>
-                </div>
-        
             </div>
-        
-            </footer>
+            </div>
+        </div>
+        </div>
+        </div>
+        </footer>
+            
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 
 </body>
 

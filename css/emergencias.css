@@ -1,21 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-body {
-    margin: 0%;
-    font-family: "Monserrat"; 
-}
-
-.encabezado {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 12px 32px;
-}
-
 .logo img {
-    max-height: 64px;
+    max-height: 56px;
 }
 
+.navbar-nav {
+    text-align: end;
+}
+
+.botonemergencias {
+    text-align: end;
+}
 .botonemergencias button {
     background-color: red;
     color: white;
@@ -24,204 +19,222 @@ body {
     border-radius: 100px;
     font-weight: bold;
     font-family: "Monserrat"; 
-    cursor: pointer;
+    font-size: 75%;
 }
 
-.menu {
-    background-color: #1A8389;
-    margin: 12px 0px 0px;
-}
-
-.menulistas {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 12px 0px 0px;
-    padding: 12px;
-    margin-inline: 224px;
-    list-style: none;
-}
-
-.menulistasitems {
+.enlace-botonemergencias {
     text-decoration: none;
-    color: white;
-    margin: 12px 0px;
-    font-family: "Monserrat"; 
 }
 
-.contenedorcuerpo {
+.botonemergencias1 button {
+    display: none;
+}
+
+
+@media (min-width: 992px) {
+    .encabezado {
+        align-items: center;
+    }
+    .logo img {
+        max-height: 72px;
+    }
+    .collapse {
+        justify-content: end;
+        text-transform: uppercase;
+    }
+    .nav-link {
+        border: none;
+        border-radius: 100px;
+        font-weight: bold;
+        font-family: "Monserrat"; 
+        cursor: pointer;
+    }
+    .nav-link:hover {
+        background-color: #1A8389;
+        color: white;
+    }
+    .botonemergencias {
+        display: none;
+    }
+    .botonemergencias1 {
+        text-align: end;
+    }
+    .botonemergencias1 button {
+        display: initial;
+        background-color: red;
+        color: white;
+        padding: 12px 16px;
+        border: none;
+        border-radius: 100px;
+        font-weight: bold;
+        font-family: "Monserrat"; 
+        cursor: pointer;
+    }
+    .botonemergencias1 button:hover {
+        background-color: yellow;
+        color: black;
+    }
+}
+
+/* MAIN */
+
+.contenedor-principal {
     position: relative;
-    display: flex;  
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
 }
 
-.imagenprincipal {
-    width: 100%;
-    height: 672px;
-}
-
-.contenedor3 {
+.contenedor-formulario {
     position: absolute;
     background-color: white;
+    margin: 24px;
+    padding: 16px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 16px 32px;
-    margin: 16px;
-    border-radius: 10px;
+    text-align: center;
+    border-radius: 20px;
+    color: #1A8389;
+    font-family: "Monserrat";
 }
 
 .titulo {
-    margin: 8px 1px 16px;
-    color: #1A8389;
-    font-size: 48px;
-    text-align: center;
-}
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    margin: 0px 0px 16px;    
+    font-weight: 700;
+    margin-top: 12px;
+    margin-bottom: 24px;
 }
 
 .labelformulario {
-    margin: 10px 0px 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     font-weight: bold;
     color: #1A8389;
-
-}
-
-.labelformulario1 {
-    margin: 32px 0px 0px;
-    color: #1A8389;
-    
 }
 
 .inputformulario {
     border-radius: 10px;
     padding: 5px;  
-    margin: 0px 248px; 
     border-color: #1A8389;
+    color: #1A8389;
+
 }
 
-.inputformulario1 {
-    border-radius: 10px;
-    height: 200px;
-    width: 300px;
-    border-color: #1A8389;
+.labelformulario1 {
+    margin-top: 12px;
 }
 
-
-.contenedorselect {
-    border: solid;
-    margin: 18px 0px;
-    border-radius: 15px;
-    padding: 5px;
-    background-color: #1A8389;
-    color: white;
-
-}   
-
-.textareaformulario {
-    height: 148px;  
-        border-radius: 10px;    
-        padding: 5px 10px;
-        border-color: #1A8389;
+textarea {
+    border-radius: 20px;
+    color: #1A8389;
+    padding: 12px;
 }
 
-
-.botonemergencia {
+.botoncontacto {
     background-color: red;
     color: white;
-    padding: 8px 8px;
+    padding: 8px;
     border: none;
     border-radius: 100px;
     font-weight: bold;
     font-family: "Monserrat"; 
     font-size: 16px;
-    margin: 32px 248px 0px;
+    margin-top: 16px;
+}   
+
+.img-formulario {
+    width: 100%;
+    height: 750px;
+    border-radius: 20px;
 }
 
-.turnero {
+
+
+/* ASIDE */
+
+.div-turnero {
     background-color: #1A8389;
+    padding: 24px;
+    display: block;
+    border-radius: 20px;
+}
+.turnero {
+    background-color: white;
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px #022a2c;
+    display: flex;
+    flex-direction: column;
 }
 
 .tituloturnero {
-    margin: 0px 48px 12px;
-    padding: 48px 0px 6px;
+    text-align: center;
+    margin: 16px 16px 32px;
+    font-weight: 700;
     font-family: "Monserrat";
-    font-size: 48px;
-    color: white;
-}
-
-.entradadedatos {
-    margin: 12px 48px 0px;
-    padding: 6px 0px 48px;
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-}
-
-.labelturnero {
-    position: relative;
-    color: white;
-    background-color: transparent;
-    font-family: "Monserrat";
-    align-self: center;
-    text-transform: uppercase;
-    font-size: 24px;
-
-}
-
-.labelturnero:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    opacity: 0.5;
-    z-index: -1;
-}
-
-.inputturnero {
-    align-self: center;
-    text-transform: uppercase;
-    font-size: 18px;
-    border-radius: 50px;
-    padding: 5px;
-    border-color: #1A8389;
-}
-
-.labelcomentario {
-    margin: 16px 0px 0px;
     color: #1A8389;
-    font-size: 16px;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-turnero {
+    text-align: center;
+    font-weight: 700;
+    font-family: "Monserrat";
+    color: #1A8389;
+}
+
+.input-turnero {
+    text-align: center;
+    padding: 2% 20%;
+    border-radius: 20px;
+    margin: 10px 0px;
+    color: #1A8389;
+    font-weight: 700;
+}
+
+.contenedor-botonturnero {
+    text-align: center;
+    margin: 16px;
+}
 .botonturnero {
-    background-color: black;
+    background-color: #1A8389;
     color: white;
-    padding: 12px 16px;
+    padding: 12px 12px;
     border: none;
     border-radius: 50px;
     font-weight: bold;
     font-family: "Monserrat"; 
-    font-size: 18px;
 }
 
+@media (min-width: 992px) {
+    .div-turnero {
+        padding: 46px 165px
+    }
+    .turnero {
+        padding: 16px 56px; 
+    }
+    .tituloturnero {
+        font-size: 48px;
+    }
+    .input-turnero {
+        padding:1% 10%;
+
+    }
+}
+
+/* PIE DE PAGINA */
 .piedepagina {
     background-color: black;
-    display: flex;
-    justify-content: space-between;
-    padding: 0px 48px;
+    margin-top: 16px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
+
 h6 {
     color: white;
 }
@@ -230,9 +243,11 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 1px;
     padding: 16px 1px;
+    text-align: center;
+    height: 100%;
 }
 
 .contenedorubicacion { 
@@ -258,16 +273,17 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin: 1px;
     padding: 16px 1px;
+    text-align: center;
+    height: 100%;
 }
 
 .contenedorhorarios {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-decoration: none;
 }
 
 .diaslaborales {
@@ -290,9 +306,10 @@ h6 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: 1px;
     padding: 16px 1px;
+    height: 100%;
 }
 
 .contenedorinstagram {
@@ -321,37 +338,40 @@ h6 {
 
 .registro {
     background-color: white;
-    display: flex;
-    justify-content: space-between;
-    justify-items: center;
-    padding: 1px 376px;
+    flex-wrap: nowrap;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px 0px;
+
 }
 
 .contenedorregistro1 {
     display: flex;
     align-items: center;
     margin: 1px;
-    padding: 1px;
+    justify-content: center;
 }
 
 .iconoregistro {
     margin: 1px 5px;
-    padding: 1px 5px;
     height: 17.5px;
 }
 
 .registronombre1 {
     margin: 1px 5px;
-    padding: 1px 5px;
+    font-size: 12px;
 }
 
 .contenedorregistro2 {
     margin: 1px;
     padding: 1px;
+    text-align: center;
 }
 
 .registronombre2 {
     margin: 1px 5px;
     padding: 2px 5px;
+    font-size: 12px;
 }
-

@@ -30,6 +30,37 @@
     display: none;
 }
 
+/* BANNER */
+
+.imagenprincipal {
+    width: 100%;
+    height: 154px;
+    border-radius: 20px;
+}
+
+.contenedor2 {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 45%;
+    transform: translate(-30%, -50%);
+}
+
+.punto-aparte {
+    display: inline-block;
+}
+
+.titulo {
+    font-family: "Monserrat";
+    font-size: 32px;
+    color: #1A8389;
+    font-weight: 700;
+}
+
 @media (min-width: 992px) {
     .encabezado {
         align-items: center;
@@ -73,50 +104,21 @@
         background-color: yellow;
         color: black;
     }
+    .texto {
+        top: 50%;
+        left: 20%;
+        transform: translate(-0%, -50%);
+    }
+        
+    .titulo {
+        font-size: 56px;
+    }      
+    
 }
 
-/* IMAGEN PRINCIPAL */
-
-.imagenprincipal {
-    width: 100%;
-    height: 220px;
-    margin: 0%;
-}
-
-.contenedor2 {
-    position: relative;
-    margin-bottom: 24px;
-}
-
-.contenedor2 {
-    height: 220px;
-    display: flex;
-    align-items: flex-start;
-    justify-content: center; 
-
-}
-
-.texto {
-    position: absolute;
-
-}
-
-.titulo {
-    font-family: "Monserrat";
-    font-size: 48px;
-    margin: 24px 0px 0px;   
-    color: #1A8389;
-    font-weight: 700;
-}
 
 /* MAIN */
-/*.profesionales {
-    display: flex;
-    justify-content: space-between;
-    margin: 32px 48px;
-    padding: 1px 224px;
-    }*/     
-    
+
     .contenedorprofesionales {
         display: flex;
         flex-direction: column;
@@ -141,17 +143,19 @@
     }
     .imagenconsultorio {
         width: 100%;
+        border-radius: 20px;
     }
 
     /* HISTORIA */
+
     .contenedorhistoria {
         display: flex;
         flex-direction: column;
         align-items: center;
         color: #1A8389  ;
-        text-align: center;
+        text-align: justify;
         font-family: "Monserrat";
-        padding: 10px 100px;
+        margin-bottom: 24px;
     }
     
     .titulohistoria {
@@ -167,85 +171,100 @@
         font-size: 18px;
     }
 
-    /* ASIDE */
-
-    .div-turnero {
-        background-color: #1A8389;
-        padding: 16px;
-        display: block;
-    }
-    .turnero {
-        background-color: white;
-        padding: 16px;
-        border-radius: 15px;
-        box-shadow: 0 2px 4px #022a2c;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .tituloturnero {
-        text-align: center;
-        margin: 16px 16px 32px;
-        font-weight: 700;
-        font-family: "Monserrat";
-        color: #1A8389;
-    }
-    
-    form {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .label-turnero {
-        text-align: center;
-        font-weight: 700;
-        font-family: "Monserrat";
-        color: #1A8389;
-    }
-    
-    .input-turnero {
-        text-align: center;
-        padding: 2% 20%;
-        border-radius: 20px;
-        margin: 10px 0px;
-        color: #1A8389;
-        font-weight: 700;
-    }
-    
-    .contenedor-botonturnero {
-        text-align: center;
-        margin: 16px;
-    }
-    .botonturnero {
-        background-color: #1A8389;
-        color: white;
-        padding: 12px 12px;
-        border: none;
-        border-radius: 50px;
-        font-weight: bold;
-        font-family: "Monserrat"; 
-    }
-    
     @media (min-width: 992px) {
-        .div-turnero {
-            padding: 46px 100px
-        }
-        .turnero {
-            padding: 16px 56px; 
-        }
-        .tituloturnero {
+        .titulohistoria {
             font-size: 48px;
         }
-        .input-turnero {
-            padding:1% 10%;
-    
+        .historia {
+            font-size: 24px;
+            text-align: center;
         }
-    }
     
-    /* FOOTER */
-    /* PIE DE PAGINA */
+
+    }
+
+/* ASIDE */
+
+.div-turnero {
+    background-color: #1A8389;
+    padding: 24px;
+    display: block;
+    border-radius: 20px;
+}
+.turnero {
+    background-color: white;
+    padding: 16px;
+    border-radius: 15px;
+    box-shadow: 0 2px 4px #022a2c;
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloturnero {
+    text-align: center;
+    margin: 16px 16px 32px;
+    font-weight: 700;
+    font-family: "Monserrat";
+    color: #1A8389;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.label-turnero {
+    text-align: center;
+    font-weight: 700;
+    font-family: "Monserrat";
+    color: #1A8389;
+}
+
+.input-turnero {
+    text-align: center;
+    padding: 2% 20%;
+    border-radius: 20px;
+    margin: 10px 0px;
+    color: #1A8389;
+    font-weight: 700;
+}
+
+.contenedor-botonturnero {
+    text-align: center;
+    margin: 16px;
+}
+.botonturnero {
+    background-color: #1A8389;
+    color: white;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-family: "Monserrat"; 
+}
+
+@media (min-width: 992px) {
+    .div-turnero {
+        padding: 46px 165px
+    }
+    .turnero {
+        padding: 16px 56px; 
+    }
+    .tituloturnero {
+        font-size: 48px;
+    }
+    .input-turnero {
+        padding:1% 10%;
+
+    }
+}
+
+/* PIE DE PAGINA */
 .piedepagina {
     background-color: black;
+    margin-top: 16px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 }
 
 h6 {
@@ -352,6 +371,12 @@ h6 {
 .registro {
     background-color: white;
     flex-wrap: nowrap;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px 0px;
+
 }
 
 .contenedorregistro1 {
@@ -382,9 +407,6 @@ h6 {
     padding: 2px 5px;
     font-size: 12px;
 }
-
-
-    
 
 
 

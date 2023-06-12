@@ -76,7 +76,7 @@
     }
 }
 
-/* MAIN */
+/* MAIN */  
 
 .container {
     position: relative;
@@ -85,6 +85,7 @@
 .imagenprincipal {
     width: 100%;
     z-index: 2;
+    border-radius: 20px;
 }
 
 .texto {
@@ -100,6 +101,7 @@
 .titulo {
     font-size: 36px;
     color: #1A8389;
+    font-weight: 700;
 }
 
 .subrayado {
@@ -116,6 +118,9 @@
 }
 
 @media (min-width: 992px) {
+    .imagenprincipal {
+        border-radius: 20px;
+    }
     .texto {
         top: 25%;
     }
@@ -126,144 +131,117 @@
         font-size: 28px;
         text-align: end;
     }
-    .carousel {
-        display: none;
-    }
-    .servicios-desktop {
-        display: inline;
-    }    
-    .servicios {
-        margin: 10px 0px;
-    }
-    .conjuntoservicios {
-        position: relative;
-        display: inline-block;
-    }    
-    .nombreservicios {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 150%);
-        font-size: 20px;
-        font-family: "Monserrat";
-        text-align: center;
-        color: #1A8389;
-        font-weight: 700;
-    }
-    .nombreservicios1 {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, 75%);
-        font-size: 20px;
-        font-family: "Monserrat";
-        text-align: center;
-        color: #1A8389;
-        font-weight: 700;
+
+    .contenedor-carousel {
+        width: 60%;
     }
 }
 
-/* TURNERO */
+    /* ASIDE */
 
-.div-turnero {
-    background-color: #1A8389;
-    padding: 16px;
-    display: block;
-}
-.turnero {
-    background-color: white;
-    padding: 16px;
-    border-radius: 15px;
-    box-shadow: 0 2px 4px #022a2c;
-    display: flex;
-    flex-direction: column;
-}
-
-.tituloturnero {
-    text-align: center;
-    margin: 16px 16px 32px;
-    font-weight: 700;
-    font-family: "Monserrat";
-    color: #1A8389;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.label-turnero {
-    text-align: center;
-    font-weight: 700;
-    font-family: "Monserrat";
-    color: #1A8389;
-}
-
-.input-turnero {
-    text-align: center;
-    padding: 2% 20%;
-    border-radius: 20px;
-    margin: 10px 0px;
-    color: #1A8389;
-    font-weight: 700;
-}
-
-.contenedor-botonturnero {
-    text-align: center;
-    margin: 16px;
-}
-.botonturnero {
-    background-color: #1A8389;
-    color: white;
-    padding: 12px 12px;
-    border: none;
-    border-radius: 50px;
-    font-weight: bold;
-    font-family: "Monserrat"; 
-}
-
-@media (min-width: 992px) {
     .div-turnero {
-        padding: 46px 100px
+        background-color: #1A8389;
+        padding: 24px;
+        display: block;
+        border-radius: 20px;
     }
     .turnero {
-        padding: 16px 56px; 
+        background-color: white;
+        padding: 16px;
+        border-radius: 15px;
+        box-shadow: 0 2px 4px #022a2c;
+        display: flex;
+        flex-direction: column;
     }
+
     .tituloturnero {
-        font-size: 48px;
+        text-align: center;
+        margin: 16px 16px 32px;
+        font-weight: 700;
+        font-family: "Monserrat";
+        color: #1A8389;
     }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .label-turnero {
+        text-align: center;
+        font-weight: 700;
+        font-family: "Monserrat";
+        color: #1A8389;
+    }
+
     .input-turnero {
-        padding:1% 10%;
-
+        text-align: center;
+        padding: 2% 20%;
+        border-radius: 20px;
+        margin: 10px 0px;
+        color: #1A8389;
+        font-weight: 700;
     }
-}
 
-/* PIE DE PAGINA */
-.piedepagina {
-    background-color: black;
-}
+    .contenedor-botonturnero {
+        text-align: center;
+        margin: 16px;
+    }
+    .botonturnero {
+        background-color: #1A8389;
+        color: white;
+        padding: 12px 12px;
+        border: none;
+        border-radius: 50px;
+        font-weight: bold;
+        font-family: "Monserrat"; 
+    }
 
-h6 {
-    color: white;
-}
+    @media (min-width: 992px) {
+        .div-turnero {
+            padding: 46px 165px
+        }
+        .turnero {
+            padding: 16px 56px; 
+        }
+        .tituloturnero {
+            font-size: 48px;
+        }
+        .input-turnero {
+            padding:1% 10%;
 
-.footerubicacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    margin: 1px;
-    padding: 16px 1px;
-    text-align: center;
-    height: 100%;
-}
+        }
+    }
 
-.contenedorubicacion { 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-decoration: none;
-}
+    /* PIE DE PAGINA */
+    .piedepagina {
+        background-color: black;
+        margin-top: 16px;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+    }
+
+    h6 {
+        color: white;
+    }
+
+    .footerubicacion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1px;
+        padding: 16px 1px;
+        text-align: center;
+        height: 100%;
+    }
+
+    .contenedorubicacion { 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-decoration: none;
+    }
 
 .calleubicacion { 
     font-family: "Monserrat";
@@ -347,6 +325,12 @@ h6 {
 .registro {
     background-color: white;
     flex-wrap: nowrap;
+    border-width: 1px;
+    border-style: solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 5px 0px;
+
 }
 
 .contenedorregistro1 {
