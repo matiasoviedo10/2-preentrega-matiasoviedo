@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
-
 .logo img {
     max-height: 56px;
 }
@@ -29,6 +28,37 @@
 
 .botonemergencias1 button {
     display: none;
+}
+
+/* BANNER */
+
+.imagenprincipal {
+    width: 100%;
+    height: 154px;
+    border-radius: 20px;
+}
+
+.contenedor2 {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.texto {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+}
+
+.punto-aparte {
+    display: inline-block;
+}
+
+.titulo {
+    font-family: "Monserrat";
+    font-size: 32px;
+    color: #1A8389;
+    font-weight: 700;
 }
 
 @media (min-width: 992px) {
@@ -74,68 +104,94 @@
         background-color: yellow;
         color: black;
     }
+    .texto {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+        
+    .titulo {
+        font-size: 56px;
+    }      
+    
 }
 
-/* MAIN */  
+/* MAIN */
+.contenedor-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.container {
+.contenedorservicios {
+    display: grid;
+    grid-template-columns: 1fr;
     position: relative;
+    align-items: end;
+    margin-bottom: 24px;
+    justify-items: center;
 }
 
-.imagenprincipal {
-    width: 100%;
-    z-index: 2;
-    border-radius: 20px;
-}
-
-.texto {
+.contenedorservicios2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 24px 32px;
+    padding: 0px 10px;
     position: absolute;
-    text-align: center;
-    font-family: "Monserrat";
-    z-index: 1;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
 }
 
-.titulo {
-    font-size: 36px;
+.contenedorservicios a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+}
+
+.servicio {
+    padding: 16px;
     color: #1A8389;
+    font-size: 24px;
     font-weight: 700;
+    font-family: "Monserrat";
 }
 
-.subrayado {
-    text-decoration: underline;
-}
-
-.eslogan {
-    font-size:16px;
+.descripcionservicio {
+    text-align: center;
+    font-size: 16px;
+    padding: 1px;
     color: #1A8389;
+    font-family: "Monserrat";
+
 }
 
-.servicios-desktop {
-    display: none;
+
+.imagenservicios {
+    border-radius: 20px;
+    height: 100%;
+
+}
+
+.botonreserva {
+    background-color: #1A8389;
+    color: white;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 100px;
+    font-weight: bold;
+    font-family: "Monserrat"; 
+    cursor: pointer;
+    list-style: none;
+    font-size: 16px;
 }
 
 @media (min-width: 992px) {
-    .imagenprincipal {
-        border-radius: 20px;
-    }
-    .texto {
-        top: 25%;
-    }
-    .titulo {
-        font-size: 72px;
-    }
-    .eslogan {
-        font-size: 28px;
-        text-align: end;
-    }
-
-    .contenedor-carousel {
-        width: 60%;
+    .carousel {
+        width: 75%;
     }
 }
+
 
     /* ASIDE */
 
@@ -145,7 +201,7 @@
         display: block;
         border-radius: 20px;
     }
-    .turnero {
+    .turnero-1 {
         background-color: white;
         padding: 16px;
         border-radius: 15px;
@@ -212,36 +268,36 @@
 
         }
     }
+    
+/* FOOTER */
+.piedepagina {
+    background-color: black;
+    margin-top: 16px;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
 
-    /* PIE DE PAGINA */
-    .piedepagina {
-        background-color: black;
-        margin-top: 16px;
-        border-top-right-radius: 20px;
-        border-top-left-radius: 20px;
-    }
+h6 {
+    color: white;
+}
 
-    h6 {
-        color: white;
-    }
+.footerubicacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1px;
+    padding: 16px 1px;
+    text-align: center;
+    height: 100%;
+}
 
-    .footerubicacion {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        margin: 1px;
-        padding: 16px 1px;
-        text-align: center;
-        height: 100%;
-    }
-
-    .contenedorubicacion { 
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-decoration: none;
-    }
+.contenedorubicacion { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+}
 
 .calleubicacion { 
     font-family: "Monserrat";
